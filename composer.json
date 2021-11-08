@@ -1,0 +1,22 @@
+{
+    "name": "arcwindab/mysqli",
+    "type": "library",
+    
+    "autoload": {
+        "classmap"   : ["src/"]
+    },
+    
+    "config": {
+        "use-include-path": true
+    },
+    
+    "license"        : "MIT",
+    
+    "require" : {
+        "php" : ">=5.6.33"
+    },
+    
+    "suggest": {
+        "php" : ">=7.0"
+    }
+}
