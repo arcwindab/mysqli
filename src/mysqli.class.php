@@ -115,7 +115,7 @@ namespace arcwindab {
          $old = array("  ");
          $new = array(" ");
          if(isset($this->DBh)) {
-            $variable = $this->DBh->real_escape_string(str_replace($old,$new,trim(urldecode(urldecode($variable)))));
+            $variable = $this->DBh->real_escape_string(str_replace($old,$new,trim(rawurldecode(rawurldecode($variable)))));
          }
 
          return $variable; 
