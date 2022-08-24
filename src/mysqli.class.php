@@ -186,7 +186,7 @@ namespace arcwindab {
                }
             } else {
                if(!$MySQLi[0]["Result"]) {
-                  trigger_error($this->DBh->error,E_USER_ERROR);
+                  trigger_error($this->DBh->error.'.<br><br><strong>Query</strong>:<br>'.$q,E_USER_ERROR);
                   return array();
                }
                return array();
